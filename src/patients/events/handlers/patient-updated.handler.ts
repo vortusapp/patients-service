@@ -6,9 +6,9 @@ import { PatientUpdatedEvent } from '../impl/patient-updated.event';
 @EventsHandler(PatientUpdatedEvent)
 export class PatientUpdatedHandler
   implements IEventHandler<PatientUpdatedEvent>
-{private kafkaService: KafkaService
-  constructor() {
-     this.kafkaService = new KafkaService()
+{
+  constructor(private kafkaService: KafkaService) {
+     
   }
    
   

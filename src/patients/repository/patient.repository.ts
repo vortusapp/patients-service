@@ -1,4 +1,3 @@
-import { KafkaService } from './../../kafka/src/kafka.service';
 import { Injectable, Body, Logger } from '@nestjs/common';
 import { PatientModel } from '../models/patient.model';
 

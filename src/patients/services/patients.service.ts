@@ -27,8 +27,8 @@ export class PatientsService {
     return await this.commandBus.execute(new DeletePatientCommand(key));
   }
 
-  async findAllPatients() {
-    return await this.queryBus.execute(new FindAllPatientsQuery());
+  async findAllPatients(key) {
+    return await this.queryBus.execute(new FindAllPatientsQuery(key));
   }
 
   async createPatientView(patientDb: EventDto) {

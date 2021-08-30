@@ -61,7 +61,7 @@ export class PatientController {
   @ApiResponse({ status: 200, description: 'List Patients.' })
   @Get()
   async findPatients(): Promise<PatientDetails> {
-    return this.patientsService.findAllPatients();
+    return this.patientsService.findAllPatients(null);
   }
 
   /* TODO: Find Patient */
@@ -69,7 +69,7 @@ export class PatientController {
   @ApiResponse({ status: 200, description: 'Get Patient.' })
   @Get(':patientId')
   async findOnePatient(@Param() patientId: PatientId) {
-    return this.patientsService.findAllPatients();
+    return this.patientsService.findAllPatients(patientId);
   }
 
   

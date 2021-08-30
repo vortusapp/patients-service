@@ -45,7 +45,7 @@ export class MongooseService {
     }
   }
 
-  async deleteOne(key: PatientId): Promise<Patient> {
+  async deleteOne(key: PatientId): Promise<any> {
     try {
       const ObjectId = require('mongodb').ObjectId; 
       Logger.log(key, 'delete')

@@ -1,4 +1,4 @@
-import { KafkaService } from './../../../kafka/src/kafka.service';
+
 import { PatientRepository } from './../../repository/patient.repository';
 import {
   EventPublisher,
@@ -7,10 +7,8 @@ import {
   IQueryHandler,
   QueryHandler,
 } from '@nestjs/cqrs';
-import { PatientDetails } from '../../dtos/patient.dto';
 import { FindAllPatientsQuery } from '../impl/find-all-patients.query';
 import { Inject, Logger } from '@nestjs/common';
-import { Subject } from 'rxjs';
 
 @QueryHandler(FindAllPatientsQuery)
 export class FindAllPatientsHandler

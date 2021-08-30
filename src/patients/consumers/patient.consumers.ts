@@ -6,16 +6,14 @@ import { OnModuleDestroy, OnModuleInit } from '@nestjs/common';
 import * as mongoose from 'mongoose';
 import { Subject } from 'rxjs';
 import { BehaviorSubject } from 'rxjs';
-import { exception } from 'console';
 import { MongoExceptionConverter } from '@mikro-orm/mongodb/MongoExceptionConverter';
 
 @Injectable()
 export class PatientViewConsumer implements OnModuleDestroy, OnModuleInit {
   constructor(
     private patientsService: PatientsService,
-    
+    private kafkaService: KafkaService
   ) {}
-  private kafkaService: KafkaService = new KafkaService();
   onModuleDestroy() {}
   onModuleInit() {
     this.startConsuming();

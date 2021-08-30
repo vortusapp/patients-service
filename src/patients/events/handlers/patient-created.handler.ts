@@ -9,9 +9,8 @@ import { PatientCreatedEvent } from '../impl/patient-created.event';
 export class PatientCreatedHandler
   implements IEventHandler<PatientCreatedEvent>
   
-{private kafkaService: KafkaService
-  constructor() {
-     this.kafkaService = new KafkaService()
+{
+  constructor(private kafkaService: KafkaService) {
   }
 
   async handle(event: PatientCreatedEvent) {

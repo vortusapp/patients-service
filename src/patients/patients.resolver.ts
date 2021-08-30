@@ -1,13 +1,9 @@
 import { KafkaService } from './services/kafka.service';
-import { exception } from 'console';
 import { MongooseService } from './services/mongoose.service';
-import { ApiResponse } from '@nestjs/swagger';
 import { Patient, PatientDetails, PatientId, PatientUpdate, KafkaBodyDto } from './dtos/patient.dto';
 import { PatientsService } from './services/patients.service';
 import * as mongoose from 'mongoose';
 import { Args, Mutation, Query, Resolver, Subscription } from '@nestjs/graphql';
-import { argsToArgsConfig } from 'graphql/type/definition';
-import { ObjectId } from 'mongodb';
 import { UserInputError } from 'apollo-server-express';
 
 @Resolver()

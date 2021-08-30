@@ -10,7 +10,7 @@ async function bootstrap() {
   const logger = new Logger('bootstrap');
   const app = await NestFactory.create(AppModule);
 
-  const port = 3001;
+  const port = process.env.PORT;
   await app.listen(port);
   logger.log(
     `Application listening of ${port} in ${process.env.NODE_ENV} mode`,
