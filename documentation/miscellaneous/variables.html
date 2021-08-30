@@ -1,0 +1,525 @@
+<!doctype html>
+<html class="no-js" lang="">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="x-ua-compatible" content="ie=edge">
+        <title>stream-cqrs documentation</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <link rel="icon" type="image/x-icon" href="../images/favicon.ico">
+	   <link rel="stylesheet" href="../styles/style.css">
+        <link rel="stylesheet" href="../styles/dark.css" media="(prefers-color-scheme: dark)">
+    </head>
+    <body>
+
+        <div class="navbar navbar-default navbar-fixed-top visible-xs">
+            <a href="../" class="navbar-brand">stream-cqrs documentation</a>
+            <button type="button" class="btn btn-default btn-menu ion-ios-menu" id="btn-menu"></button>
+        </div>
+
+        <div class="xs-menu menu" id="mobile-menu">
+                <div id="book-search-input" role="search"><input type="text" placeholder="Type to search"></div>            <compodoc-menu></compodoc-menu>
+        </div>
+
+        <div class="container-fluid main">
+           <div class="row main">
+               <div class="hidden-xs menu">
+                   <compodoc-menu mode="normal"></compodoc-menu>
+               </div>
+               <!-- START CONTENT -->
+               <div class="content miscellaneous-variables">
+                   <div class="content-data">
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                   
+
+<ol class="breadcrumb">
+  <li>Miscellaneous</li>
+  <li>Variables</li>
+</ol>
+
+<section>
+    <h3 id="index">Index</h3>
+    <table class="table table-sm table-bordered index-table">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <ul class="index-list">
+                        <li>
+                            <a href="#CommandHandlers" title="src/patients/commands/handlers/index.ts" ><b>CommandHandlers</b>&nbsp;&nbsp;&nbsp;(src/.../index.ts)</a>
+                        </li>
+                        <li>
+                            <a href="#config" title="config.ts" ><b>config</b>&nbsp;&nbsp;&nbsp;(config.ts)</a>
+                        </li>
+                        <li>
+                            <a href="#configs" title="config.ts" ><b>configs</b>&nbsp;&nbsp;&nbsp;(config.ts)</a>
+                        </li>
+                        <li>
+                            <a href="#Consumers" title="src/patients/consumers/index.ts" ><b>Consumers</b>&nbsp;&nbsp;&nbsp;(src/.../index.ts)</a>
+                        </li>
+                        <li>
+                            <a href="#databaseProviders" title="src/patients/providers/database.providers.ts" ><b>databaseProviders</b>&nbsp;&nbsp;&nbsp;(src/.../database.providers.ts)</a>
+                        </li>
+                        <li>
+                            <a href="#env" title="config.ts" ><b>env</b>&nbsp;&nbsp;&nbsp;(config.ts)</a>
+                        </li>
+                        <li>
+                            <a href="#envDevelopmentName" title="config.ts" ><b>envDevelopmentName</b>&nbsp;&nbsp;&nbsp;(config.ts)</a>
+                        </li>
+                        <li>
+                            <a href="#EventHandlers" title="src/patients/events/handlers/index.ts" ><b>EventHandlers</b>&nbsp;&nbsp;&nbsp;(src/.../index.ts)</a>
+                        </li>
+                        <li>
+                            <a href="#PatientSchema" title="src/patients/dtos/patient.schema.ts" ><b>PatientSchema</b>&nbsp;&nbsp;&nbsp;(src/.../patient.schema.ts)</a>
+                        </li>
+                        <li>
+                            <a href="#PatientsProviders" title="src/patients/providers/patients.provider.ts" ><b>PatientsProviders</b>&nbsp;&nbsp;&nbsp;(src/.../patients.provider.ts)</a>
+                        </li>
+                        <li>
+                            <a href="#QueryHandlers" title="src/patients/queries/handlers/index.ts" ><b>QueryHandlers</b>&nbsp;&nbsp;&nbsp;(src/.../index.ts)</a>
+                        </li>
+                    </ul>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+</section>
+
+    <h3>src/patients/commands/handlers/index.ts</h3>
+    <section>
+    <h3></h3>    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="CommandHandlers"></a>
+                    <span class="name">
+                        <span ><b>CommandHandlers</b></span>
+                        <a href="#CommandHandlers"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Type : </i>    <code>[]</code>
+
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Default value : </i><code>[
+  CreatePatientHandler,
+  UpdatePatientHandler,
+  DeletePatientHandler,
+  CreatePatientViewHandler,
+  UpdatePatientViewHandler,
+  DeletePatientViewHandler
+]</code>
+                    </td>
+                </tr>
+
+
+        </tbody>
+    </table>
+</section>
+    <h3>config.ts</h3>
+    <section>
+    <h3></h3>    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="config"></a>
+                    <span class="name">
+                        <span ><b>config</b></span>
+                        <a href="#config"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Type : </i>        <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/object" target="_blank" >object</a></code>
+
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Default value : </i><code>{ ...configs.base, ...configs[env] }</code>
+                    </td>
+                </tr>
+
+
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="configs"></a>
+                    <span class="name">
+                        <span ><b>configs</b></span>
+                        <a href="#configs"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Type : </i>        <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/object" target="_blank" >object</a></code>
+
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Default value : </i><code>{
+  base: {
+    ENV: env,
+    DEV: env &#x3D;&#x3D;&#x3D; envDevelopmentName,
+    // General
+    NAME: process.env.APP_NAME || &#x27;stream-cqrs&#x27;,
+    TITLE: process.env.APP_TITLE || &#x27;Users&#x27;,
+    DESCRIPTION: process.env.APP_DESCRIPTION || &#x27;Users API Microservice&#x27;,
+    // API
+    PREFIX: process.env.APP_PREFIX || &#x27;v1&#x27;,
+    VERSION: process.env.APP_VERSION || &#x27;1.0&#x27;,
+    API_EXPLORER_PATH: process.env.APP_API_EXPLORER_PATH || &#x27;/api&#x27;,
+    // Server
+    HOST: process.env.APP_HOST || &#x27;0.0.0.0&#x27;,
+    PORT: process.env.APP_PORT || 7070,
+    // Event Store
+    EVENT_STORE_SETTINGS: {
+      protocol: process.env.EVENT_STORE_PROTOCOL || &#x27;http&#x27;,
+      hostname: process.env.EVENT_STORE_HOSTNAME || &#x27;0.0.0.0&#x27;,
+      tcpPort: process.env.EVENT_STORE_TCP_PORT || 1113,
+      httpPort: process.env.EVENT_STORE_HTTP_PORT || 2113,
+      credentials: {
+        username: process.env.EVENT_STORE_CREDENTIALS_USERNAME || &#x27;admin&#x27;,
+        password: process.env.EVENT_STORE_CREDENTIALS_PASSWORD || &#x27;changeit&#x27;,
+      },
+      poolOptions: {
+        min: process.env.EVENT_STORE_POOLOPTIONS_MIN || 1,
+        max: process.env.EVENT_STORE_POOLOPTIONS_MAX || 10,
+      },
+    },
+  },
+  development: {},
+  production: {
+    PORT: process.env.APP_PORT || 7071,
+  },
+  test: {
+    PORT: 7072,
+  },
+}</code>
+                    </td>
+                </tr>
+
+
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="env"></a>
+                    <span class="name">
+                        <span ><b>env</b></span>
+                        <a href="#env"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Default value : </i><code>process.env.NODE_ENV || envDevelopmentName</code>
+                    </td>
+                </tr>
+
+
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="envDevelopmentName"></a>
+                    <span class="name">
+                        <span ><b>envDevelopmentName</b></span>
+                        <a href="#envDevelopmentName"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Type : </i>        <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string" target="_blank" >string</a></code>
+
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Default value : </i><code>&#x27;development&#x27;</code>
+                    </td>
+                </tr>
+
+
+        </tbody>
+    </table>
+</section>
+    <h3>src/patients/consumers/index.ts</h3>
+    <section>
+    <h3></h3>    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="Consumers"></a>
+                    <span class="name">
+                        <span ><b>Consumers</b></span>
+                        <a href="#Consumers"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Type : </i>    <code>[]</code>
+
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Default value : </i><code>[PatientViewConsumer]</code>
+                    </td>
+                </tr>
+
+
+        </tbody>
+    </table>
+</section>
+    <h3>src/patients/providers/database.providers.ts</h3>
+    <section>
+    <h3></h3>    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="databaseProviders"></a>
+                    <span class="name">
+                        <span ><b>databaseProviders</b></span>
+                        <a href="#databaseProviders"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Type : </i>    <code>[]</code>
+
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Default value : </i><code>[
+  {
+    provide: &#x27;DATABASE_CONNECTION&#x27;,
+    useFactory: (): Promise&lt;typeof mongoose&gt; &#x3D;&gt;
+      mongoose.connect(process.env.MONGODB_URL, {
+        useNewUrlParser: true,
+        useUnifiedTopology: true,
+      }),
+  },
+]</code>
+                    </td>
+                </tr>
+
+
+        </tbody>
+    </table>
+</section>
+    <h3>src/patients/events/handlers/index.ts</h3>
+    <section>
+    <h3></h3>    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="EventHandlers"></a>
+                    <span class="name">
+                        <span ><b>EventHandlers</b></span>
+                        <a href="#EventHandlers"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Type : </i>    <code>[]</code>
+
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Default value : </i><code>[
+  PatientCreatedHandler,
+  PatientUpdatedHandler,
+  PatientDeletedHandler,
+  PatientViewCreatedHandler,
+  PatientViewUpdatedHandler,
+  PatientViewDeletedHandler
+]</code>
+                    </td>
+                </tr>
+
+
+        </tbody>
+    </table>
+</section>
+    <h3>src/patients/dtos/patient.schema.ts</h3>
+    <section>
+    <h3></h3>    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="PatientSchema"></a>
+                    <span class="name">
+                        <span ><b>PatientSchema</b></span>
+                        <a href="#PatientSchema"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Default value : </i><code>new mongoose.Schema({
+  _id: mongoose.Types.ObjectId,
+  firstName: String,
+  lastName: String
+})</code>
+                    </td>
+                </tr>
+
+
+        </tbody>
+    </table>
+</section>
+    <h3>src/patients/providers/patients.provider.ts</h3>
+    <section>
+    <h3></h3>    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="PatientsProviders"></a>
+                    <span class="name">
+                        <span ><b>PatientsProviders</b></span>
+                        <a href="#PatientsProviders"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Type : </i>    <code>[]</code>
+
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Default value : </i><code>[
+  {
+    provide: &#x27;PATIENT_MODEL&#x27;,
+    useFactory: (connection: Connection) &#x3D;&gt;
+      connection.model(&#x27;PatientModel&#x27;, PatientSchema),
+      inject: [&#x27;DATABASE_CONNECTION&#x27;],
+  },
+]</code>
+                    </td>
+                </tr>
+
+
+        </tbody>
+    </table>
+</section>
+    <h3>src/patients/queries/handlers/index.ts</h3>
+    <section>
+    <h3></h3>    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="QueryHandlers"></a>
+                    <span class="name">
+                        <span ><b>QueryHandlers</b></span>
+                        <a href="#QueryHandlers"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Type : </i>    <code>[]</code>
+
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Default value : </i><code>[
+  FindAllPatientsHandler
+]</code>
+                    </td>
+                </tr>
+
+
+        </tbody>
+    </table>
+</section>
+
+
+
+                   </div><div class="search-results">
+    <div class="has-results">
+        <h1 class="search-results-title"><span class='search-results-count'></span> result-matching "<span class='search-query'></span>"</h1>
+        <ul class="search-results-list"></ul>
+    </div>
+    <div class="no-results">
+        <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+    </div>
+</div>
+</div>
+               <!-- END CONTENT -->
+           </div>
+       </div>
+
+       <script>
+            var COMPODOC_CURRENT_PAGE_DEPTH = 1;
+            var COMPODOC_CURRENT_PAGE_CONTEXT = 'miscellaneous-variables';
+            var COMPODOC_CURRENT_PAGE_URL = 'variables.html';
+            var MAX_SEARCH_RESULTS = 15;
+       </script>
+
+       <script src="../js/libs/custom-elements.min.js"></script>
+       <script src="../js/libs/lit-html.js"></script>
+       
+       <script type="module" src="../js/menu-wc.js" defer></script>
+       <script nomodule src="../js/menu-wc_es5.js" defer></script>
+
+       <script src="../js/libs/bootstrap-native.js"></script>
+
+       <script src="../js/libs/es6-shim.min.js"></script>
+       <script src="../js/libs/EventDispatcher.js"></script>
+       <script src="../js/libs/promise.min.js"></script>
+       <script src="../js/libs/zepto.min.js"></script>
+
+       <script src="../js/compodoc.js"></script>
+
+       <script src="../js/tabs.js"></script>
+       <script src="../js/menu.js"></script>
+       <script src="../js/libs/clipboard.min.js"></script>
+       <script src="../js/libs/prism.js"></script>
+       <script src="../js/sourceCode.js"></script>
+          <script src="../js/search/search.js"></script>
+          <script src="../js/search/lunr.min.js"></script>
+          <script src="../js/search/search-lunr.js"></script>
+          <script src="../js/search/search_index.js"></script>
+       <script src="../js/lazy-load-graphs.js"></script>
+
+
+    </body>
+</html>
