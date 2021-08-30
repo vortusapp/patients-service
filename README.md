@@ -25,7 +25,7 @@ $ npm install
 <p>For mongoDB a quick start can be found <a href="https://docs.mongodb.com/manual/tutorial/getting-started/" target="_blank">here</a> although it may be easier to spin up a cluster with <a href="https://docs.atlas.mongodb.com/getting-started/" target="_blank">mongoDB Atlas</a>.</p>
 
 <p>Details for these services need to be entered into a .env file in the root of the application with the following environmental variables</p>
-```JSON
+```json
 KAFKA_BROKERS = localhost:9092
 KAFKA_CLIENT_ID = patients
 KAFKA_TOPIC = patients
